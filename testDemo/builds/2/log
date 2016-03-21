@@ -1,0 +1,23 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace C:\Users\Akhila\.jenkins\workspace\testDemo
+ > C:\Program Files\Git\mingw64\libexec\git-core\git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > C:\Program Files\Git\mingw64\libexec\git-core\git.exe config remote.origin.url https://github.com/Akhila25/Jenkins.git # timeout=10
+Fetching upstream changes from https://github.com/Akhila25/Jenkins.git
+ > C:\Program Files\Git\mingw64\libexec\git-core\git.exe --version # timeout=10
+using .gitcredentials to set credentials
+ > C:\Program Files\Git\mingw64\libexec\git-core\git.exe config --local credential.username Akhila25 # timeout=10
+ > C:\Program Files\Git\mingw64\libexec\git-core\git.exe config --local credential.helper store --file=\"C:\Users\Akhila\AppData\Local\Temp\git8540429421098626976.credentials\" # timeout=10
+ > C:\Program Files\Git\mingw64\libexec\git-core\git.exe -c core.askpass=true fetch --tags --progress https://github.com/Akhila25/Jenkins.git +refs/heads/*:refs/remotes/origin/*
+ > C:\Program Files\Git\mingw64\libexec\git-core\git.exe config --local --remove-section credential # timeout=10
+ > C:\Program Files\Git\mingw64\libexec\git-core\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > C:\Program Files\Git\mingw64\libexec\git-core\git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 655b8a82e6857544c11403d2c132ef98360767bb (refs/remotes/origin/master)
+ > C:\Program Files\Git\mingw64\libexec\git-core\git.exe config core.sparsecheckout # timeout=10
+ > C:\Program Files\Git\mingw64\libexec\git-core\git.exe checkout -f 655b8a82e6857544c11403d2c132ef98360767bb
+ > C:\Program Files\Git\mingw64\libexec\git-core\git.exe rev-list 655b8a82e6857544c11403d2c132ef98360767bb # timeout=10
+[testDemo] $ cmd.exe /C '"mvn.bat -f DemoDynamicWebProject/pom.xml Clean Package && exit %%ERRORLEVEL%%"'
+'mvn.bat' is not recognized as an internal or external command,
+operable program or batch file.
+Build step 'Invoke top-level Maven targets' marked build as failure
+Finished: FAILURE
